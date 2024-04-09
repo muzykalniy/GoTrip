@@ -1,3 +1,18 @@
+@mixin hoverLink {
+    content: "";
+    position: absolute;
+
+    left: 0;
+    right: 10px;
+    bottom: -5px;
+    display: block;
+
+    // width: 35px; // не указываем строгую, чтобы не доходила всегда 10 пкс до края
+    height: 4px;
+    border-radius: 100px;
+    background: rgb(196, 196, 196);
+}
+
 @mixin mediaTablet {
     @media screen and (max-width: $tablet) {
         @content;
