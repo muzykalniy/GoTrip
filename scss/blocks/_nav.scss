@@ -1,0 +1,56 @@
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav__logo {
+}
+.nav__list {
+    display: flex;
+    column-gap: 80px;
+    font-size: 15px;
+    font-weight: 500;
+
+    & a {
+        position: relative;
+        &:hover::after {
+            content: "";
+            position: absolute;
+
+            left: 0;
+            right: 10px;
+            bottom: -5px;
+            display: block;
+
+            width: 35px;
+            height: 4px;
+            border-radius: 100px;
+            background: rgb(196, 196, 196);
+        }
+
+        & .active::after {
+            content: "";
+            position: absolute;
+
+            left: 0;
+            right: 10px;
+            bottom: -5px;
+            display: block;
+
+            // width: 35px; // не указываем строгую, чтобы не доходила всегда 10 пкс до края
+            height: 4px;
+            border-radius: 100px;
+            background: rgb(196, 196, 196);
+        }
+    }
+}
+.nav__login {
+}
+
+// Logo
+
+.logo {
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+}

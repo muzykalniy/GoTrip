@@ -1,0 +1,28 @@
+.header {
+    min-height: 940px;
+    padding-top: 44px;
+    background: linear-gradient(154.32deg, rgb(66, 142, 95) -17.197%, rgb(17, 33, 32) 78.196%), rgb(32, 68, 52);
+    position: relative;
+
+    &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0; //  в нижний левый угол прижимаем
+        width: 100%;
+        height: 96px; // высота самого svg элемента
+
+        background-image: url("/img/header/header-bottom.svg");
+        background-size: 100%;
+    }
+}
+
+// Шапка с навигацией
+.header__top {
+    margin-bottom: 86px;
+}
+
+// Контент
+.header__content {
+    max-width: 592px; // смотрим, что у него максимальная ширина
+}

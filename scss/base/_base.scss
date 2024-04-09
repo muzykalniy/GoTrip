@@ -35,7 +35,7 @@ a {
     color: $color-main;
     transition: color 0.2s ease-in; //применили к свойству color
     &:hover {
-        color: $accent;
+        color: $color-main;
     } //&символ наследования принадлежности
 }
 

@@ -236,10 +236,81 @@ a {
   transition: color 0.2s ease-in;
 }
 a:hover {
-  color: #0f1f1c;
+  color: #ffffff;
 }
 
 .block {
   height: 200px;
   background-color: blue;
+}
+
+.header {
+  min-height: 940px;
+  padding-top: 44px;
+  background: linear-gradient(154.32deg, rgb(66, 142, 95) -17.197%, rgb(17, 33, 32) 78.196%), rgb(32, 68, 52);
+  position: relative;
+}
+.header::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 96px;
+  background-image: url("/img/header/header-bottom.svg");
+  background-size: 100%;
+}
+
+.header__top {
+  margin-bottom: 86px;
+}
+
+.header__content {
+  max-width: 592px;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__list {
+  display: flex;
+  -moz-column-gap: 80px;
+       column-gap: 80px;
+  font-size: 15px;
+  font-weight: 500;
+}
+.nav__list a {
+  position: relative;
+}
+.nav__list a:hover::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 10px;
+  bottom: -5px;
+  display: block;
+  width: 35px;
+  height: 4px;
+  border-radius: 100px;
+  background: rgb(196, 196, 196);
+}
+.nav__list a .active::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 10px;
+  bottom: -5px;
+  display: block;
+  height: 4px;
+  border-radius: 100px;
+  background: rgb(196, 196, 196);
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: 700;
+  color: #fff;
 }/*# sourceMappingURL=main.css.map */
