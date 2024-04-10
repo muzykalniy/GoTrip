@@ -1,0 +1,31 @@
+// Контент
+
+.header__content {
+    max-width: 592px; // смотрим, что у него максимальная ширина
+}
+.header__badge {
+    margin-bottom: 7px;
+    padding: 11px 30px;
+    font-size: 18px;
+    font-weight: 500;
+
+    display: inline-block;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.25);
+}
+
+.header__title {
+    font-size: 55px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+.header__text {
+    margin-bottom: 68px;
+    font-size: 25px;
+    font-weight: 700;
+    color: $color-main;
+    opacity: 0.5;
+}
+.btn__item-2 {
+    @include buttonItem-2;
+}
