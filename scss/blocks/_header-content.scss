@@ -1,8 +1,27 @@
 // Контент
 
+.header__row {
+    display: flex;
+}
 .header__content {
     max-width: 592px; // смотрим, что у него максимальная ширина
+    position: relative; // чтобы задать z index картинке
+    z-index: 1; // поднимаем текст выше картинки
 }
+.header__img {
+    position: relative;
+    flex-grow: 1; // мы растягиваем блок, так как у него нет ширины и картинка из него вываливается
+
+    & img {
+        position: absolute;
+        top: -168px;
+        right: -140px;
+        max-width: unset;
+        width: 898px;
+        height: 1123px;
+    }
+}
+
 .header__badge {
     margin-bottom: 7px;
     padding: 11px 30px;

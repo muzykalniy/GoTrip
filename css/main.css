@@ -245,6 +245,7 @@ a:hover {
 }
 
 .header {
+  overflow: hidden;
   min-height: 940px;
   padding-top: 44px;
   background: linear-gradient(154.32deg, rgb(66, 142, 95) -17.197%, rgb(17, 33, 32) 78.196%), rgb(32, 68, 52);
@@ -344,6 +345,10 @@ a:hover {
 .btn__item-1:hover::before {
   opacity: 1;
 }
+.btn__item-1:active {
+  position: relative;
+  top: 1px;
+}
 
 .logo {
   font-size: 20px;
@@ -351,8 +356,27 @@ a:hover {
   color: #fff;
 }
 
+.header__row {
+  display: flex;
+}
+
 .header__content {
   max-width: 592px;
+  position: relative;
+  z-index: 1;
+}
+
+.header__img {
+  position: relative;
+  flex-grow: 1;
+}
+.header__img img {
+  position: absolute;
+  top: -168px;
+  right: -140px;
+  max-width: unset;
+  width: 898px;
+  height: 1123px;
 }
 
 .header__badge {
@@ -409,4 +433,8 @@ a:hover {
 }
 .btn__item-2:hover::before {
   opacity: 1;
+}
+.btn__item-2:active {
+  position: relative;
+  top: 1px;
 }/*# sourceMappingURL=main.css.map */

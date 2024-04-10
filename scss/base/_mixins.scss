@@ -43,6 +43,10 @@
     &:hover::before {
         opacity: 1;
     }
+    &:active {
+        position: relative;
+        top: 1px;
+    }
 }
 @mixin buttonItem-2 {
     display: flex;
@@ -74,6 +78,10 @@
     &:hover::before {
         opacity: 1;
     }
+    &:active {
+        position: relative;
+        top: 1px;
+    } // чтобы чуть двигалась
 }
 
 @mixin mediaTablet {
