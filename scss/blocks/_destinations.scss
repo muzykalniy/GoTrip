@@ -1,0 +1,35 @@
+.destinations {
+    padding: 96px 0 100px;
+    overflow-x: hidden; // чтобы то что выходило за пределы, не создавало скролл
+}
+
+.destinations__row {
+    display: flex;
+    column-gap: 50px;
+}
+.destinations__content {
+    max-width: 456px;
+}
+
+.destinations__title {
+    font-size: 55px;
+    font-weight: 600;
+    color: $accent;
+    & span {
+        font-size: 30px;
+        color: inherit;
+    }
+}
+.destinations__text {
+    margin-top: 15px;
+    margin-bottom: 60px;
+
+    font-size: 25px;
+    font-weight: 500;
+
+    color: $accent;
+    opacity: 0.5;
+}
+.btn__item-3 {
+    @include buttonItem-3;
+}

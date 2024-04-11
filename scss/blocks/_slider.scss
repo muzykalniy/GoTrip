@@ -1,0 +1,60 @@
+.destinations__slider {
+    max-width: 1110px; // на макете выделили три фотки и посмотрели размер
+    flex-shrink: 0; // задаем что блок не уменьшался
+}
+
+.slider__item {
+    margin-top: 27px; // задаем чтобы были неактивные слайды пониже
+    width: 335px;
+    height: 402px;
+    object-fit: cover; // прописываем чтобы было корректное масштабирование
+    border-radius: 35px;
+
+    transition: all 0.2s ease-in; // чтобы картинка плавно менялась
+}
+
+// тот элемент, который находится по центру, в его обертке есть класс active center,  а у всех активных просто active
+.slider {
+    position: relative;
+    height: 456px; // прописываем, чтобы кнопки не прыгали при переключении
+    & .center {
+        & .slider__item {
+            margin-top: 0; // марджин топ убираем чтобы другие слайды были пониже
+            width: 380px;
+            height: 456px;
+        } // одна картинка активная и ей задаем больше размеры
+    }
+} // .slider__item лежит внутри. он лежит в center, а center лежит в slider - это чтобы увеличивался центральный элемент
+
+.slider__btn {
+    display: block;
+    width: 68px;
+    height: 68px;
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+
+    background: linear-gradient(171.6deg, rgb(255, 123, 78) -18.787%, rgb(255, 88, 78) 114.48%), rgb(139, 139, 139);
+    &--prev {
+        left: -27px; // левая кнопка вылезает на 27 пкс за левый край
+        @include buttonSlider;
+        // position: absolute;
+        // top: 50%;
+        // transform: translateY(-50%); // 50% от своей высоты чтобы она была по центру
+        // z-index: 9; // чтобы ее на передний план поставить
+        // padding-left: 26px;
+        // justify-content: flex-start;
+    } // двигаем паддингами стрелки чтобы их центр тяжести был по центру
+
+    &--next {
+        right: -27px; // правая кнопка вылезает на 27 пкс за правый край
+        @include buttonSlider;
+        // position: absolute;
+        // top: 50%;
+        // transform: translateY(-50%); // 50% от своей высоты чтобы она была по центру
+        // z-index: 9; // чтобы ее на передний план поставить
+        // padding-right: 26px;
+        // justify-content: flex-end;
+    }
+}
