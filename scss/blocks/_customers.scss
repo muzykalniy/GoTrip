@@ -1,0 +1,75 @@
+.customers {
+    padding: 100px 0 133px;
+}
+
+.customers__row {
+    display: grid;
+    grid-template-columns: 478px 1fr;
+    column-gap: 70px;
+}
+
+.customers__img {
+    & img {
+        border-radius: 60px;
+    }
+}
+
+.customers__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    row-gap: 15px;
+}
+
+.customers__title {
+    font-size: 45px;
+    font-weight: 500;
+    color: $accent;
+}
+
+.review {
+}
+
+.review__client {
+    margin-bottom: 60px;
+    display: flex;
+    align-items: center;
+    column-gap: 33px;
+}
+
+.review__client-avatar {
+    overflow: hidden;
+    width: 134px;
+    height: 134px;
+    border-radius: 50%;
+    background-color: #ff794e;
+}
+
+.review__customer-desc {
+}
+
+.review__client-desc-name {
+    margin-bottom: 11px;
+    font-size: 33px;
+    font-weight: 500;
+    color: $accent;
+}
+
+.review__client-desc-country {
+    font-size: 25px;
+    font-weight: 400;
+    color: $accent;
+    opacity: 0.5;
+}
+
+.review__text {
+    margin-bottom: 30px;
+
+    font-size: 22px;
+    font-weight: 500;
+    color: $accent;
+    opacity: 0.5;
+}
+
+.review__rating {
+}
