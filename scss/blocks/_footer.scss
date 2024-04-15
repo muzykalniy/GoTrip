@@ -1,0 +1,15 @@
+.footer {
+    padding: 56px 0 74px;
+    & .nav__list--footer {
+        & a {
+            color: $accent;
+            opacity: 0.5;
+            &.active::after {
+                display: none;
+            }
+            &:hover::after {
+                display: none;
+            }
+        }
+    }
+}

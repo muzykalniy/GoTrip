@@ -3,8 +3,7 @@
     justify-content: space-between;
     align-items: center;
 }
-.nav__logo {
-}
+
 .nav__list {
     display: flex;
     column-gap: 80px;
@@ -31,6 +30,13 @@
     display: flex;
     column-gap: 25px;
     align-items: center;
+    &.nav__login--footer {
+        column-gap: 66px;
+        & a {
+            color: $accent;
+            opacity: 0.5;
+        }
+    }
 }
 
 // Login button
@@ -45,4 +51,9 @@
     font-size: 20px;
     font-weight: 700;
     color: #fff;
+}
+.logo--footer {
+    & a {
+        color: #ff7c4e;
+    }
 }
