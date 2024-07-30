@@ -2,7 +2,7 @@
 
 - HTML,
 - SCSS,
-- Gulp
+- owlCarousel
 
 
 [Watch demo](https://muzykalniy.github.io/GoTrip/)
